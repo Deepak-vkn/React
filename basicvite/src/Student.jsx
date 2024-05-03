@@ -1,25 +1,26 @@
 import PropTypes from 'prop-types'
 
 function Student(props){
+    const loggedtrue=<h1 className='loggedtrue '>Welcome {props.name}</h1>
+    const notlogged=<h1 className='loggedfalse'>please loggin</h1>
 
-    return(
-        <div className="student">
-            <p>{props.name}</p>
-            <p>{props.age}</p>
-            <p>{props.isStudent?'yes':'false'}</p>
-        </div>
-    )
 
-}
+        if(props.islogged){
+        return  loggedtrue
+        }
+        else{
+            return notlogged
+        }
 
-Student.PropTypes={
-    name:PropTypes.string,
-    age:PropTypes.number,
-    isStudent:PropTypes.bool,
 }
 Student.defaultProps={
+    islogged:false,
     name:'Guest',
-    age:0,
-    isStudent:false,
 }
+Student.propTypes={
+    islogged:Boolean,
+    name:String
+}
+
+
 export  default Student
