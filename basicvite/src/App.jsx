@@ -1,4 +1,4 @@
-import Mycomponent from "./Colorpicker.jsx"
+import Mycomponent from "./Carmanagement.jsx"
 
 function App() {
      return(
