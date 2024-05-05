@@ -1,4 +1,4 @@
-import Mycomponent from "./Digitalclock.jsx"
+import Mycomponent from "./ComponentA.jsx"
 
 function App() {
      return(
