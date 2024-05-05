@@ -1,4 +1,4 @@
-import Mycomponent from "./Useeffecthook.jsx"
+import Mycomponent from "./Digitalclock.jsx"
 
 function App() {
      return(
